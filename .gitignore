@@ -1,0 +1,93 @@
+# ==============================================================================
+# RansomTripwire — .gitignore
+# Excludes build artifacts, IDE config, Python cache, and runtime vault files.
+# ==============================================================================
+
+# ──────────────────────────────────────────────
+# CMake / CLion Build Artifacts
+# ──────────────────────────────────────────────
+cmake-build-debug/
+cmake-build-release/
+cmake-build-relwithdebinfo/
+cmake-build-minsizerel/
+build/
+out/
+
+# Compiled binaries
+*.exe
+*.dll
+*.lib
+*.a
+*.o
+*.obj
+*.pdb
+
+# Ninja build system
+*.ninja
+*.ninja_deps
+*.ninja_log
+CMakeCache.txt
+cmake_install.cmake
+CMakeFiles/
+install_manifest.txt
+
+# ──────────────────────────────────────────────
+# IDE & Editor Files
+# ──────────────────────────────────────────────
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+*.suo
+*.user
+*.sln.docstates
+.vs/
+
+# ──────────────────────────────────────────────
+# Python Cache
+# ──────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyz
+*.egg-info/
+dist/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ──────────────────────────────────────────────
+# Vault Runtime Files (NEVER commit live state)
+# ──────────────────────────────────────────────
+# Transient adversary PID marker written at attack runtime
+protected_vault/.attack_pid
+
+# Student payload records are provisioned at runtime by dashboard.py
+protected_vault/student_record_*.txt
+
+# ──────────────────────────────────────────────
+# OS Junk
+# ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# ──────────────────────────────────────────────
+# Logs & Temp
+# ──────────────────────────────────────────────
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# ──────────────────────────────────────────────
+# Dev Utility Scripts (local use only)
+# ──────────────────────────────────────────────
+push_commits.ps1
