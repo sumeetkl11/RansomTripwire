@@ -274,7 +274,7 @@ RansomTripwire/
 
 ## 📄 License
 
-MIT License — © 2024 [Sumeet Kanhiya](https://github.com/sumeetk111)
+MIT License — © 2024 [Sumeet Kanhiya](https://github.com/sumeetkl11)
 
 See [LICENSE](LICENSE) for full terms.
 
